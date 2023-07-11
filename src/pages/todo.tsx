@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import TodoList from '../components/TodoList';
 
-interface Todo {
-    id: number;
-    text: string;
-    completed: boolean;
+type Todo = {
+    id: number
+    text: string
+    completed: boolean
 }
 
 const TodoPage: React.FC = () => {

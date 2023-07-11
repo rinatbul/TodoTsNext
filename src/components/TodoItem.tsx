@@ -1,14 +1,14 @@
 import React from 'react';
 
-interface Todo {
-    id: number;
-    text: string;
-    completed: boolean;
+type Todo = {
+    id: number
+    text: string
+    completed: boolean
 }
 
-interface TodoItemProps {
-    todo: Todo;
-    onToggle: (id: number) => void;
+type TodoItemProps = {
+    todo: Todo
+    onToggle: (id: number) => void
 }
 
 const TodoItem: React.FC<TodoItemProps> = ({ todo, onToggle }) => {
