@@ -1,0 +1,14 @@
+.wrapper{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 30%;
+    background-color: coral;
+    border-radius: 30px;
+}
+.wrapper button{
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}

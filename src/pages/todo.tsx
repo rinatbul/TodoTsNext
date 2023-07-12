@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import TodoList from '../components/TodoList';
+import s from './todo.module.css';
 
 type Todo = {
     id: number
@@ -40,19 +41,22 @@ const TodoPage: React.FC = () => {
     };
 
     return (
-        <div>
-            <h1>Todo App</h1>
-            <form onSubmit={handleFormSubmit}>
-                <input
-                    type="text"
-                    value={inputValue}
-                    onChange={handleInputChange}
-                    placeholder="Enter todo"
-                />
-                <button type="submit">Add Todo</button>
-            </form>
-            <TodoList todos={todos} onToggle={handleToggleTodo} />
-        </div>
+
+            <div className={s.wrapper}>
+                <h1>Todo App</h1>
+                <form className={s.form} onSubmit={handleFormSubmit}>
+                    <input
+                        type="text"
+                        value={inputValue}
+                        onChange={handleInputChange}
+                        placeholder="Enter todo"
+                    />
+                    <button type="submit">Add Todo</button>
+                </form>
+                <TodoList todos={todos} onToggle={handleToggleTodo} />
+            </div>
+
+
     );
 };
 

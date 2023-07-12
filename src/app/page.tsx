@@ -1,12 +1,14 @@
 import { NextPage } from 'next';
+import s from './page.module.css'
 
-const HomePage: NextPage = () => {
+const Home: NextPage = () => {
     return (
-        <div>
-            <h1>Todo App</h1>
-                <a href="/todo">Go to Todo</a>
+        <div className={s.wrapper}>
+            <form action="/todo">
+                <button><h1>Todo App</h1></button>
+            </form>
         </div>
     );
 };
 
-export default HomePage;
+export default Home;

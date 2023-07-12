@@ -1,4 +1,5 @@
 import React from 'react';
+import s from './TodoItem.module.css'
 
 type Todo = {
     id: number
@@ -14,7 +15,7 @@ type TodoItemProps = {
 
 const TodoItem: React.FC<TodoItemProps> = ({ todo, onToggle }) => {
     return (
-        <li>
+        <li className={s.items}>
             <input
                 type="checkbox"
                 checked={todo.completed}

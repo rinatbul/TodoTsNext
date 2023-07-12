@@ -1,5 +1,6 @@
 import React from 'react';
 import TodoItem from './TodoItem';
+import s from './TodoList.module.css'
 
 type Todo = {
     id: number
@@ -14,7 +15,7 @@ type TodoListProps = {
 
 const TodoList: React.FC<TodoListProps> = ({ todos, onToggle }) => {
     return (
-        <ul>
+        <ul className={s.list}>
             {todos.map(todo => (
                 <TodoItem key={todo.id} todo={todo} onToggle={onToggle} />
             ))}
