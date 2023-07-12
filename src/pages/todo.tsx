@@ -47,7 +47,7 @@ const TodoPage: React.FC = () => {
                     type="text"
                     value={inputValue}
                     onChange={handleInputChange}
-                    placeholder="Enter a todo..."
+                    placeholder="Enter todo"
                 />
                 <button type="submit">Add Todo</button>
             </form>

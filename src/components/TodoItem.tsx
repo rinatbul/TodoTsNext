@@ -6,6 +6,7 @@ type Todo = {
     completed: boolean
 }
 
+
 type TodoItemProps = {
     todo: Todo
     onToggle: (id: number) => void
